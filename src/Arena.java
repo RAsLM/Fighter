@@ -28,5 +28,9 @@ public class Arena {
         name = reader.readLine();
 
         secondFighter = new Fighter(name);
+
+        MessageHelper.startMassage(firstFighter, secondFighter);
     }
+
+
 }
