@@ -29,8 +29,4 @@ public class Arena {
 
         secondFighter = new Fighter(name);
     }
-
-    private void setMessageHelper(){
-
-    }
 }
