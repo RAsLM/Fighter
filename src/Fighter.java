@@ -8,8 +8,8 @@ public class Fighter {
 
     Fighter(String name){
         this.name = name;
-        health = (int) (Math.random()*80 + Math.random()*120);
-        strength = (int) (Math.random()*5 + Math.random()*15);
+        health = (int) (Math.random() * 80 + Math.random() * 120);
+        strength = (int) (Math.random() * 5 + Math.random() * 15);
     }
 
     public String getName() {
