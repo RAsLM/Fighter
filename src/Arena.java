@@ -32,5 +32,29 @@ public class Arena {
         MessageHelper.startMassage(firstFighter, secondFighter);
     }
 
+    private boolean fightIsOver(){
+        if (firstFighter.getHealth() <= 0 || secondFighter.getHealth() <= 0){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    private Fighter getWinner(){
+        if (firstFighter.getHealth() > 0){
+            return firstFighter;
+        }else {
+            return secondFighter;
+        }
+    }
+
+    private Fighter getLooser(){
+        if (firstFighter.getHealth() <= 0){
+            return firstFighter;
+        }
+        else {
+            return secondFighter;
+        }
+    }
 
 }

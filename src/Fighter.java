@@ -23,4 +23,11 @@ public class Fighter {
     public int getHealth() {
         return health;
     }
+
+    public void kick(Fighter firstFighter){
+        while (firstFighter.getHealth() > 0)
+        {
+
+        }
+    }
 }
