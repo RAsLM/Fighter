@@ -15,10 +15,16 @@ public class MessageHelper {
     }
 
     public static void printKickInfo (Fighter firstFighter, Fighter secondFighter){
-
+        System.out.println(firstFighter + " kicked " + secondFighter);
     }
 
     public static void printWinner(Fighter winner, Fighter looser){
+        System.out.println(winner + " wins!");
+        if (looser.getHealth() < -5){
+            System.out.println(looser + " FATALITY!");
+        } else {
+            System.out.println(looser + " lost");
+        }
 
     }
 }

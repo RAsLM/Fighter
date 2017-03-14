@@ -25,9 +25,6 @@ public class Fighter {
     }
 
     public void kick(Fighter firstFighter){
-        while (firstFighter.getHealth() > 0)
-        {
 
-        }
     }
 }
