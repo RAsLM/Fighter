@@ -57,4 +57,17 @@ public class Arena {
         }
     }
 
+    private void kick(int i){
+        if (i % 2 == 0){
+            MessageHelper.printKickInfo(firstFighter, secondFighter);
+        } else {
+            MessageHelper.printKickInfo(secondFighter, firstFighter);
+        }
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
 }
