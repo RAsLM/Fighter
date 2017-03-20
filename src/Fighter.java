@@ -25,6 +25,6 @@ public class Fighter {
     }
 
     public void kick(Fighter firstFighter){
-
+        firstFighter.health = firstFighter.health - this.strength;
     }
 }
