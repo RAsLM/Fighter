@@ -58,9 +58,9 @@ public class Arena {
 
     private void kick(int i){
         if (i % 2 == 0){
-            MessageHelper.printKickInfo(firstFighter, secondFighter);
+            firstFighter.kick(secondFighter);
         } else {
-            MessageHelper.printKickInfo(secondFighter, firstFighter);
+            secondFighter.kick(firstFighter);
         }
         try {
             Thread.sleep(1000);
@@ -70,10 +70,9 @@ public class Arena {
     }
 
     private void fight() throws IOException {
-        Arena arena = new Arena();
-        arena.initArena();
+        initArena();
         int i = 0;
-        while (fightIsOver()){
+        while (!fightIsOver()){
             kick(++i);
         }
         MessageHelper.printWinner(getWinner(), getLooser());

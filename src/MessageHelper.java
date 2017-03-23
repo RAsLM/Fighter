@@ -16,7 +16,7 @@ public class MessageHelper {
 
     public static void printKickInfo (Fighter firstFighter, Fighter secondFighter){
         printLine();
-        System.out.println(firstFighter + " kicked " + secondFighter);
+        System.out.println(firstFighter.getName() + " kicked " + secondFighter.getName());
     }
 
     public static void printWinner(Fighter winner, Fighter looser){
