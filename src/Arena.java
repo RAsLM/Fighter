@@ -10,7 +10,7 @@ public class Arena {
     Fighter secondFighter;
 
     public static void main(String[] args) throws IOException {
-        fight();
+        new Arena().fight();
     }
 
     private void initArena() throws IOException {
@@ -69,7 +69,7 @@ public class Arena {
         }
     }
 
-    public static void fight() throws IOException {
+    private void fight() throws IOException {
         Arena arena = new Arena();
         arena.initArena();
         int i = 0;
