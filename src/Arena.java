@@ -73,9 +73,9 @@ public class Arena {
         Arena arena = new Arena();
         arena.initArena();
         int i = 0;
-        while (arena.fightIsOver()){
-            arena.kick(++i);
+        while (fightIsOver()){
+            kick(++i);
         }
-        MessageHelper.printWinner(arena.getWinner(), arena.getLooser());
+        MessageHelper.printWinner(getWinner(), getLooser());
     }
 }
