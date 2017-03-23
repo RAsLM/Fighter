@@ -10,8 +10,7 @@ public class Arena {
     Fighter secondFighter;
 
     public static void main(String[] args) throws IOException {
-        Arena arena = new Arena();
-        arena.initArena();
+        fight();
     }
 
     private void initArena() throws IOException {
@@ -70,4 +69,13 @@ public class Arena {
         }
     }
 
+    public static void fight() throws IOException {
+        Arena arena = new Arena();
+        arena.initArena();
+        int i = 0;
+        while (arena.fightIsOver()){
+            arena.kick(++i);
+        }
+        MessageHelper.printWinner(arena.getWinner(), arena.getLooser());
+    }
 }

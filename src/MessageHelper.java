@@ -21,11 +21,11 @@ public class MessageHelper {
 
     public static void printWinner(Fighter winner, Fighter looser){
         printLine();
-        System.out.println(winner + " wins!");
+        System.out.println(winner.getName() + " wins!");
         if (looser.getHealth() < -5){
-            System.out.println(looser + " FATALITY!");
+            System.out.println(looser.getName() + " FATALITY!");
         } else {
-            System.out.println(looser + " lost");
+            System.out.println(looser.getName() + " lost");
         }
     }
     public static void printLine(){
